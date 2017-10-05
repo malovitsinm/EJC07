@@ -1,10 +1,9 @@
-package com.epam.l2.com.epam.hw1;
+package com.epam.hw1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
-public final class CatClass {
+public final class RiverClass {
 
 
     public static void main(String[] args) throws IOException {
