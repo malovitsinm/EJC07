@@ -30,6 +30,7 @@ public class TrafficLight {
      * <p>This method checks user inputted integer for the point of entrance to this cycle</p>
      * @param reader  - Buffer reader for console user input
      * @throws IOException - An error in type of user input
+     *
      * @return exitCode - 1 if problem was solved correct or 0 if user input was incorrect,
      * but didn't trew the IOException
      * */
@@ -37,6 +38,11 @@ public class TrafficLight {
     private int determineLightColor(BufferedReader reader) throws IOException {
         String userInput = reader.readLine();
         int inputValueToInt = Integer.parseInt(userInput);
+        if(inputValueToInt < 0){
+            System.out.println("Minutes don't go that way! They only go plus, guiding us further and further to " +
+                    "death!");
+            return 0;
+        }
         int parsedValue = (inputValueToInt % 60) % 10;
         if(parsedValue >= 0 && parsedValue < 2){
             System.out.println("The traffic light is burning in bright red! FOR THE LOVE OF GOD STOP!");
