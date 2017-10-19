@@ -1,4 +1,4 @@
-package com.epam.hw2;
+package com.epam.java.hw2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,12 +32,17 @@ public class TrafficLight {
      * @throws IOException - An error in type of user input
      *
      * @return exitCode - 1 if problem was solved correct or 0 if user input was incorrect,
-     * but didn't trew the IOException
+     * but didn't threw the IOException
      * */
 
-    private int determineLightColor(BufferedReader reader) throws IOException {
-        String userInput = reader.readLine();
-        int inputValueToInt = Integer.parseInt(userInput);
+    private int determineLightColor(BufferedReader reader) throws IOException{
+        int inputValueToInt = 0;
+        try{
+            String userInput = reader.readLine();
+            inputValueToInt = Integer.parseInt(userInput);
+        }catch (NumberFormatException e){
+            System.err.println("I only understand integer numbers. Or as smart people would say: " + e);
+        }
         if(inputValueToInt < 0){
             System.out.println("Minutes don't go that way! They only go plus, guiding us further and further to " +
                     "death!");
@@ -57,5 +62,6 @@ public class TrafficLight {
             System.out.println("Woah! Was that even minutes you typed in?! Sorry mate, I didn't get any of that.");
             return 0;
         }
+
     }
 }

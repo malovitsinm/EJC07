@@ -1,4 +1,4 @@
-package com.epam.hw1;
+package com.epam.java.hw1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,13 +13,11 @@ public final class RiverClass {
         int value = Integer.parseInt(param);
         if (value < 2){
             System.out.println("Oh boy, you can't read, don't you?");
-        }
-        else if (value > 2 && value < 153) {
+        } else if (value > 2 && value < 153) {
             for (int i = 1; i < value + 1; i++) {
                 System.out.println("Mississippi " + i + "!");
             }
-        }
-        else {
+        } else {
             System.out.println("This number is beyond me!");
         }
     }

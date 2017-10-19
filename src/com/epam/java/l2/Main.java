@@ -1,6 +1,4 @@
-package com.epam.l2;
-
-import java.nio.charset.CharsetEncoder;
+package com.epam.java.l2;
 
 public class Main {
     public static void main(String[] args) {
