@@ -1,4 +1,4 @@
-package com.epam.java.l7;
+package com.epam.l7;
 
 public class Cat {
     String catName;

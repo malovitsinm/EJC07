@@ -1,4 +1,4 @@
-package com.epam.java.l3;
+package com.epam.l3;
 
 public class Cat {
     public static void main(String[] args) {

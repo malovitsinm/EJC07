@@ -1,4 +1,4 @@
-package com.epam.java.hw1;
+package com.epam.hw1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

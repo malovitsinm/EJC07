@@ -1,4 +1,4 @@
-package com.epam.java.l5;
+package com.epam.l5;
 
 /**
  *

@@ -1,4 +1,4 @@
-package com.epam.java.l4;
+package com.epam.l4;
 
 public class MainClass {
 }
