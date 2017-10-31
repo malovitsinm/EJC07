@@ -1,4 +1,6 @@
-package com.epam.hw3;
+package com.epam.hw3.dao.impl;
+
+import com.epam.hw3.dao.FlyBehavior;
 
 public class FlyNoWay implements FlyBehavior {
     @Override

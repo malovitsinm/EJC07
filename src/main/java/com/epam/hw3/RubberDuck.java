@@ -1,5 +1,9 @@
 package com.epam.hw3;
 
+import com.epam.hw3.dao.impl.FightNoWay;
+import com.epam.hw3.dao.impl.FlyNoWay;
+import com.epam.hw3.dao.impl.Squeck;
+
 public class RubberDuck extends Duck {
     @Override
     public void display() {
@@ -9,5 +13,6 @@ public class RubberDuck extends Duck {
     public RubberDuck() {
         flyBehavior = new FlyNoWay();
         quackBehavior = new Squeck();
+        fightBehavior = new FightNoWay();
     }
 }

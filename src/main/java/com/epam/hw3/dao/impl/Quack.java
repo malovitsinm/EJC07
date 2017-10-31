@@ -1,4 +1,6 @@
-package com.epam.hw3;
+package com.epam.hw3.dao.impl;
+
+import com.epam.hw3.dao.QuackBehavior;
 
 public class Quack implements QuackBehavior {
     @Override

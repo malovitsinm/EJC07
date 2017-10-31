@@ -1,4 +1,4 @@
-package com.epam.hw3;
+package com.epam.hw3.dao;
 
 public interface QuackBehavior {
     public void quack();

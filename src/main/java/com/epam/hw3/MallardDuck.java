@@ -1,10 +1,15 @@
 package com.epam.hw3;
 
+import com.epam.hw3.dao.impl.FightNoWay;
+import com.epam.hw3.dao.impl.FlyWithWings;
+import com.epam.hw3.dao.impl.Quack;
+
 public class MallardDuck extends Duck {
 
     public MallardDuck() {
         flyBehavior = new FlyWithWings();
         quackBehavior = new Quack();
+        fightBehavior = new FightNoWay();
     }
 
     @Override
