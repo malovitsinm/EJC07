@@ -13,8 +13,6 @@ public class Quackerdome {
     Duck duckInRedShorts;
     Duck duckInBlueShorts;
 
-
-
     public Quackerdome(Duck duckInRedShorts, Duck duckInBlueShorts) {
         this.duckInRedShorts = generateADuckFighter(duckInRedShorts);
         this.duckInBlueShorts = generateADuckFighter(duckInBlueShorts);
@@ -51,7 +49,6 @@ public class Quackerdome {
                 duckInBlueShorts.performFly();
                 break;
         }
-
     }
 
     public int compareFightingStyles(Duck defender,Duck attacker){
@@ -103,6 +100,7 @@ public class Quackerdome {
         howToFightList.add(new FightCunningly());
         howToFightList.add(new FightFairly());
         howToFightList.add(new FightSmart());
+        howToFightList.add(new FightNoWay());
 
         List<QuackBehavior> howToQuackList = new ArrayList<>();
         howToQuackList.add(new Quack());
@@ -111,7 +109,7 @@ public class Quackerdome {
 
         Random randomGenerator = new Random();
         int[] duckSignature = {randomGenerator.nextInt(2),
-                randomGenerator.nextInt(3),
+                randomGenerator.nextInt(4),
                 randomGenerator.nextInt(3)};
 
         fighter.setFlyBehavior(howToFlyList.get(duckSignature[0]));
